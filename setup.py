@@ -5,7 +5,7 @@
 from setuptools import setup, find_packages
 import os
 
-with open('README.md') as readme_file:
+with open('README.md', encoding='utf-8') as readme_file:
     readme = readme_file.read()
 
 thelibFolder = os.path.dirname(os.path.realpath(__file__))
