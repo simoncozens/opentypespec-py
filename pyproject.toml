@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opentypespec"
+dynamic = ["version"]
+description = "Data derived from the OpenType specification"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.5"
+authors = [
+    { name = "Simon Cozens", email = "simon@simon-cozens.org" },
+]
+keywords = [
+    "opentypespec",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/simoncozens/opentypespec-py"
+[tool.setuptools_scm]
+git_describe_command = "git describe --match 'v*' --tags"
